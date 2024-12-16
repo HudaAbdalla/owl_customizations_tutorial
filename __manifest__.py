@@ -5,7 +5,7 @@
     'summary': "Short (1 phrase/line) summary of the module's purpose",
 
     'description': """
-Long description of module's purpose
+            this module is practice for Odoo OWL customizations
     """,
 
     'author': "Huda",
@@ -22,6 +22,13 @@ Long description of module's purpose
         'views/views.xml',
         'views/templates.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+            # 'owl_custom\static\src\components\listView\listView.css',
+            'owl_custom\static\src\components\listView\listView.xml',
+            'owl_custom\static\src\components\listView\listView.js',
+        ],
+     },
     
 }
 

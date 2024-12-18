@@ -1,71 +1,20 @@
 <odoo>
-  <data>
-     <!-- <record model="ir.ui.view" id="owl_custom.form">
-      <field name="name">owl_custom form</field>
-      <field name="model">owl_custom.owl_custom</field>
-      <field name="arch" type="xml">
-        <form>
-          <field name="name"/>
+  <record model="ir.actions.client" id="list_view_action">
+    <field name="name">Properties List View</field>
+    <field name="tag">owl_custom.list_view_action</field>
+
+  </record>
   
-        </form>
-      </field>
-    </record>
+  <menuitem name="OWL" 
+    id="owl_view_menu_item"
+    sequence ="2"
+  />
 
-
-    <record model="ir.ui.view" id="owl_custom.list">
-      <field name="name">owl_custom list</field>
-      <field name="model">owl_custom.owl_custom</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-  
-        </tree>
-      </field>
-    </record> -->
-
-
-<!-- 
-    <record model="ir.actions.act_window" id="owl_custom.action_window">
-      <field name="name">owl_custom window</field>
-      <field name="res_model">owl_custom.owl_custom</field>
-      <field name="view_mode">form,tree</field>
-    </record> -->
-
-
-    <!-- server action to the one above -->
-
-    <record model="ir.actions.client" id="list_view_action">
-      <field name="name">Properties List View </field>
-      <field name="tag">owl_custom.action_list_view </field>
-
-    </record>
-
+  <menuitem name="Properties OWL" 
+    id="property_list_view_menu_item"
+    parent ="owl_view_menu_item"
+    action ="list_view_action"         
+  />
 
   
-    <menuitem name="OWL" 
-              id="owl_view_menu_item"
-              sequence ="2"
-    />
-
-    <menuitem name="Properties OWL" 
-              id="property_list_view_menu_item"
-              parent ="owl_view_menu_item"
-              action ="list_view_action"
-              
-              
-    />
-<!-- action ="list_view_action" -->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="owl_custom.menu_1" parent="owl_custom.menu_root"/>
-    <menuitem name="Menu 2" id="owl_custom.menu_2" parent="owl_custom.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="owl_custom.menu_1_list" parent="owl_custom.menu_1"
-              action="owl_custom.action_window"/>
-    <menuitem name="Server to list" id="owl_custom" parent="owl_custom.menu_2"
-              action="owl_custom.action_server"/>
--->
-  </data>
 </odoo>

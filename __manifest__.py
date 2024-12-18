@@ -24,7 +24,7 @@
     ],
     'assets': {
         'web.assets_backend': [
-            # 'owl_custom\static\src\components\listView\listView.css',
+            'owl_custom\static\src\components\listView\listView.css',
             'owl_custom\static\src\components\listView\listView.xml',
             'owl_custom\static\src\components\listView\listView.js',
         ],
